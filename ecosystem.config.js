@@ -16,8 +16,9 @@ module.exports = {
       repo : 'git@github.com:pll2050/pm2-test.git',
       path : '/home/ksk/web/pm2-production',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install && npm run build && npm run generate && pm2 startOrReload ecosystem.config.js',
-      'pre-setup': ''
+      // 'post-deploy' : 'npm install && npm run build && npm run generate && pm2 startOrReload ecosystem.config.js',
+      'post-deploy' : 'pm2 startOrReload ecosystem.config.js',
+      'pre-setup': 'npm install && npm run build && npm run generate'
     }
   }
 };
