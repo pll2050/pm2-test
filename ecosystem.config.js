@@ -8,10 +8,10 @@ module.exports = {
   }],
 
   deploy : {
-    production : {
+    pro : {
       user : 'ksk',
       key  : '/home/ksk/web/key/pll2050@vmware.pub',
-      host : '192.168.0.119',
+      host : '192.168.0.11',
       ref  : 'origin/main',
       repo : 'git@github.com:pll2050/pm2-test.git',
       path : '/home/ksk/web/pm2-production',
