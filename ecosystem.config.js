@@ -10,7 +10,7 @@ module.exports = {
   deploy : {
     pro : {
       user : 'ksk',
-      key  : '/home/ksk/web/key/ksk.pub',
+      key  : '/home/ksk/.ssh/ksk.pub',
       host : '192.168.0.11',
       ref  : 'origin/main',
       repo : 'git@github.com:pll2050/pm2-test.git',
